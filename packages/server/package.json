@@ -1,0 +1,34 @@
+{
+  "name": "@monorepo/server",
+  "author": "Janek Rahrt <janek.rahrt@me.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "A typescript server application",
+  "version": "0.0.0",
+  "homepage": "https://github.com/janek26/monorepo#readme",
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janek26/monorepo.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config ../../jestconfig.json"
+  },
+  "bugs": {
+    "url": "https://github.com/janek26/monorepo/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "dependencies": {
+    "@monorepo/common": "^0.0.0"
+  }
+}
